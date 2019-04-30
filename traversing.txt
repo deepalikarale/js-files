@@ -1,0 +1,21 @@
+<! DOCTYPE html>
+<head>
+<title>Traversing through javascript object</title>
+</head>
+
+<body>
+<div id="list">
+
+<ul>
+<li>one </li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+</ul>
+
+</div>
+</body>
+
+<script src = "dom1.js"></script>
+</html>

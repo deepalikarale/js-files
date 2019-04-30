@@ -1,0 +1,1 @@
+document.write('<h1 style="color:red">text can be made red in js</h1>');

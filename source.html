@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<title> External js </title>
+
+</head>
+<body>
+<h1> External js file</h1>
+
+
+<script>
+
+///////////////////////  o/p:  deepa   pooja
+// function greeting()
+// { var  person = "deepa";
+//  alert(person);
+// }
+//  person = "pooja";
+// greeting();
+// alert(person);
+
+//////////////////////////////////////////////////////////////
+function genRandomNo(upper,lower)
+{
+  return Math.floor(Math.random()*(upper-lower+1))+lower;
+}
+console.log(genRandomNo(10,5));
+console.log(genRandomNo("ten",5));
+if(isNaN(upper) || isNaN(lower))
+{
+  throw new error("both arguments should be numbers");
+}
+
+////////////////////////////
+
+// function genRandomNo(upper)
+// {
+//   return Math.floor(Math.random()*upper)+1;
+// }
+//
+// var counter = 0;
+// while(counter < 10)
+// {
+//   document.write(genRandomNo(1000)+ "<br>");
+//   counter++;
+// }
+
+/////////////////////////////////////////
+//////////////////////////////////  function declaration //////////////////////
+
+// function sum(x,y){
+//   return (x+y);
+// }
+// var c = sum(2,3);
+// console.log(c);
+//
+// ///////////////////////////////////////////////
+//
+// function sub(x,y){
+//   return (x-y);
+// }
+// var c = sub(6,3);
+// console.log(c);
+//
+// //////////////////////////////////////////
+//
+// function mul(x,y){
+//   return (x*y);
+// }
+// var c = mul(2,3);
+// console.log(c);
+//
+// //////////////////////////////////
+//
+// function div(x,y){
+//   return (x/y);
+// }
+// var c = div(10,5);
+// console.log(c);
+//
+// //////////////////////////////////////////
+// /////////////////////////////   function expression  ////////////////////////////////////////////////
+// var add = function(x,y){
+//   return(x+y);
+// }
+// var c = add(5,1);
+// console.log(c);
+// ////////////////////////////////
+//
+// var sub = function(x,y){
+//   return(x-y);
+// }
+// var c = sub(5,1);
+// console.log(c);
+//
+// ///////////////////////////////
+// var mul = function(x,y){
+//   return(x*y);
+// }
+// var c = mul(5,1);
+// console.log(c);
+// /////////////////////////////////////
+//
+// var div = function(x,y){
+//   return(x/y);
+// }
+// var c = div(5,1);
+// console.log(c);
+
+/////////////////////////////////////////
+///////////////////////////////  arraw function
+                       // removes {} if function contains only one line///////////////////////////////////////
+
+// var add = (x,y) => (x+y);
+// console.log(add(5,5));
+//
+// ////////////////////////////////////////////////////
+//
+// var sub = (x,y) => (x-y);
+// console.log(sub(5,5));
+//
+// ///////////////////////////////////////
+//
+// var mul = (x,y) => (x*y);
+// console.log(mul(5,5));
+//
+// ///////////////////////////////
+//
+// var div = (x,y) => (x/y);
+// console.log(div(5,5));
+
+/////////////////////// arrow function with curly bracs   ////////////////////////////////////////////////
+// var div = (x,y) =>{
+//   var n = (x/y);
+//   console.log(n);
+// }
+// div(4,2);
+
+//////////////////////////////// keywords var///////////////////////
+//////////////////////    o/p:  5
+// var a = 2;
+// a = 5;
+// console.log(a);
+
+////////////////////////////////  let   o/p:   5////////////////////
+// let a = 2;
+// a = 5;
+// console.log(a);
+
+///////////////////////////////// const    o/p:type error...invalid assignment to const a   /////////////////
+// const a = 2;
+// a = 5;
+// console.log(a);
+
+//////////////////////////////  keywords with scopes global & local  -var  -global scope  ///////////////////////////////////
+///////////////////   o/p:  pooja   pooja
+// var name = "deepali";
+// var count = 10;
+//
+// function varkey(){
+//   if(count > 6){
+//     name = "pooja";
+//     console.log(name);
+//   }
+// }
+// varkey();
+// console.log(name);
+
+///////////////////////////////   o/p:pooja deepali////////////////////////////
+
+// var name = "deepali";
+// var count = 10;
+//
+// function varkey(){
+//   if(count > 6){
+//     var name = "pooja";
+//     console.log(name);
+//   }
+// }
+// varkey();
+// console.log(name);
+
+//////////////////////////////////////   let keyword   - block scope  //////////////
+/////////////////////////  o/p: pooja   pooja
+// let name = "deepali";
+// var count = 10;
+//
+// function varkey(){
+//   if(count > 6){
+//     name = "pooja";
+//     console.log(name);
+//   }
+// }
+// varkey();
+// console.log(name);
+
+//////////////////////////////   o/p":  pooja deepali   ///////////////////////////////
+
+// let name = "deepali";
+// var count = 10;
+//
+// function varkey(){
+//   if(count > 6){
+//     let name = "pooja";
+//     console.log(name);
+//   }
+// }
+// varkey();
+// console.log(name);
+
+////////////////////////////////////  const o/p: error bea const var cant change //////////////////////////////////////////////////
+
+// const name = "deepali";
+// var count = 10;
+//
+// function varkey(){
+//   if(count > 6){
+//     name = "pooja";
+//     console.log(name);
+//   }
+// }
+// varkey();
+// console.log(name);
+
+/////////////////////////  o/p: pooja   deepali  ////////////////////////////////////////
+
+// const name = "deepali";
+// var count = 10;
+//
+// function varkey(){
+//   if(count > 6){
+//     const name = "pooja";
+//     console.log(name);
+//   }
+// }
+// varkey();
+// console.log(name);
+
+//////////////////////////////   scope with array ////////////////////////////////////
+//////////////////////////////  keyword var  ////////////////////////////////////////
+/////////////        o/p: a[6,7,8,9]
+// var a = [1,2,3,4,5];
+// a = [6,7,8,9];
+// console.log(a);
+
+ //////////////////////////////////    let o/p:a = [6,7,8,9,10];      ///////////////////////////////
+
+ // let a = [1,2,3,4,5];
+ // a = [6,7,8,9,10];
+ // console.log(a);
+
+//////////////////////////////////  const   /////////////////////////////////
+
+// const a = [1,2,3,4,5];
+// a[0] = 6 ;
+// a[1] = 7 ;
+// a[2] = 8 ;
+// a[3] = 9 ;
+// a[4] = 10;
+// console.log(a);
+
+/////////////////////////////const with push pop shift unshift /////////////////
+
+// const a = [1,2,3,4,5];
+// a.push(6);
+// console.log(a);
+// console.log(a.pop());
+// a.shift();
+// console.log(a);
+// console.log(a.unshift(4));
+// console.log(a);
+
+///////////////////////////////  scope with object  ///////////////////////////
+
+// var a = {1,2,3,4,5};
+// a = {6,7,8,9};
+// console.log(a);
+
+
+
+</script>
+</body>
+</html>
